@@ -14,5 +14,4 @@ const blogCollection = defineCollection({ schema: blogSchema });
 
 export const collections = {
     'blog': blogCollection,
-//     'store': storeCollection
  }
