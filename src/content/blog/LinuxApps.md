@@ -2,7 +2,7 @@
 title: "Daily use Apps in Linux"
 description: "This are my favorite applications as well as most usefull list link installation link."
 pubDate: "June 02 2023"
-heroImage: "/blog-Images/applications.webp"
+heroImage: "https://res.cloudinary.com/daewefkrz/image/upload/c_scale,w_491/v1686503574/Blog-Images/Linux/sd10ufseicrmaunhvjhq.webp"
 badge: "Linux"
 ---
 

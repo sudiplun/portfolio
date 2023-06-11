@@ -5,7 +5,7 @@ operating system, Apache as the Web server, MySQL as the relational
 database management system and PHP As the object-oriented scripting 
 language. (Sometimes Perl or Python is used instead of PHP.)"
 pubDate: "June 5 2023"
-heroImage: "/blog-Images/lamp.webp"
+heroImage: "https://res.cloudinary.com/daewefkrz/image/upload/c_scale,w_500/v1686503549/Blog-Images/Web_Development/jd8stxv3qwleikpl6qgr.webp"
 badge: "web development"
 ---
 

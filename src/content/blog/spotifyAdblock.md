@@ -2,7 +2,7 @@
 title: "How to install spotify adblock"
 description: "step by step installation works on flatpak."
 pubDate: "June 03 2023"
-heroImage: "/blog-Images/spotify-ad-blocker.webp"
+heroImage: "https://res.cloudinary.com/daewefkrz/image/upload/v1686503575/Blog-Images/Linux/fky7r70fcnrtvnx89dvx.webp"
 badge: "Linux"
 ---
 # spotify-adblock-install

@@ -2,7 +2,7 @@
 title: "copy & cut in Vim"
 description: "Frequently using key bindings in Vim/Neovim"
 pubDate: "May 9 2023"
-heroImage: "/blog-Images/vim.webp"
+heroImage: "https://res.cloudinary.com/daewefkrz/image/upload/c_scale,w_418/v1686503575/Blog-Images/Linux/oetndc7g7bueksrwdfqz.webp"
 badge: "Vim"
 ---
 
