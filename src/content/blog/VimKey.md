@@ -6,7 +6,7 @@ heroImage: "https://res.cloudinary.com/daewefkrz/image/upload/c_scale,w_418/v168
 badge: "Vim"
 ---
 
-**Copy(yank) in vim**  
+**Copy(yank) in vim**
 **yiw** - yank the current word  
 **yw** \- yank from the current cursor location to start of next word  
 **yb** - yank from current cursor location to the end of the previous word  
