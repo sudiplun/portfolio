@@ -2,7 +2,8 @@
 title: "How to convert pdf to image to pdf on linux"
 description: ""
 pubDate: "june 13 2023"
-heroImage: ""
+heroImage: "convert pdf to image.jpg or all jpf to pdf on any linux with command line tool."
+badge: "Linux"
 ---
 ## Install command line tool pdftoppm
 
