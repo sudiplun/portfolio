@@ -2,7 +2,7 @@
 title: "Change file/folder permission/ownership in Linux"
 description: "change file and folder permission & ownership on linux file system by using `chown` && `chmod`, when you are have to access regularly on root directory"
 pubDate: "June 19 2023"
-heroImage: ""
+heroImage: "https://linuxhint.com/wp-content/uploads/2021/06/change-directory-owner-Linux-11.png"
 badge: "Linux"
 ---
 
