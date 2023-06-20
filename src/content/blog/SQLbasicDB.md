@@ -2,7 +2,7 @@
 title: "Basic on MsSQL"
 description: "Create databse,Table and stored procedure."
 pubDate: "June 19 2023"
-heroImage: "https://res.cloudinary.com/daewefkrz/image/upload/c_scale,h_225/v1687189997/mssql_gfcdzl.png"
+heroImage: "https://res.cloudinary.com/daewefkrz/image/upload/v1687189997/mssql_gfcdzl.png"
 badge: "Database"
 ---
 ### Create database
