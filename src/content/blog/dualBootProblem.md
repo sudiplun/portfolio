@@ -1,5 +1,5 @@
 ---
-title: "fix major problem"
+title: "fix slow boot"
 description: ""
 pubDate: "July 19 2023"
 heroImage: ""
@@ -8,11 +8,11 @@ badge: "linux"
 
 ### Resize root partition problem
 
-On my laptop 256GB ssd where i already install **fedora** as main os and **Windows 11** now got and idea to install **kali linux** by resize fedora root directory and use easeUS partition master on iso but got big problem it done job slow for 69% takes 2 hours then laptop shutdown oh battery dies then little google it then used **_gparted_** on live **linux mint** for resize vola it works.
+On my laptop 256GB SSD where I already installed **Fedora** as main OS and **Windows 11**, I got an idea to install **Kali Linux** by resizing Fedora root directory and using easeUS partition master on iso but there was a problem, it took 2 hours to do it and then the laptop battery died. Using Gparted on Linux Mint Live, I finally resized the volume.
 
 ### Installation
 
-then proceed to install kali used comman efi partition for three OS, used already swap partition and resize partition as root successfull on install everything works great on kali
+Afterwards, proceed to install Kali using the common efi partition for three operating systems i.e 512MB,swap partition that already using by fedora and resize  30GB as root which is successfull on install everything works great on kali.
 
 ### Slow boot
 
@@ -22,11 +22,10 @@ on **fedora** face slow boot about 1 min 15 sec time to boot and check boot time
 sudo systemd-analyze plot > boot.svg
 ```
 
-some disk related task takes time about 45s to wait then check gnome disk see swap is not mount at boot it means it has swap partition with _UUID_ but on installation of kali linux swap partition formated and _UUID_ change so it looking for original UUID that make 45sec wait then i ask AI
+Some disk related task takes time about 45s to wait then check *gnome disk* see **swap** is not mount at boot it means it has swap partition with _UUID_ looking for is not avaiable because installation of kali linux formated and change _UUID_ of *swap*  so it looking for original UUID that make *45sec* wait.
 
 #### how to mount swap partition at boot ?
 
-it says
 To mount a swap partition at boot in Fedora (or any Linux distribution that uses systemd), follow these steps:
 
 1. Identify the Swap Partition:
@@ -38,11 +37,8 @@ To mount a swap partition at boot in Fedora (or any Linux distribution that uses
    lsblk
    ```
 
-Identify the partition labeled as "swap" (e.g., `/dev/sdXY` where `XY` are letters representing the specific partition).
-
+Identify the partition labeled as "swap"
 2. Backup /etc/fstab (optional but recommended):
-   Before making any changes to the system, it's a good practice to create a backup of the `/etc/fstab` file. The `fstab` file contains information about the filesystems and partitions that should be mounted at boot.
-
    ```bash
    sudo cp /etc/fstab /etc/fstab.backup
    ```
@@ -54,24 +50,15 @@ Identify the partition labeled as "swap" (e.g., `/dev/sdXY` where `XY` are lette
    sudo vim /etc/fstab
    ```
 
-   Add the following line to the end of the file, replacing `/dev/sdXY` with the actual device name or UUID of your swap partition:
+   Add the following line to the end of the file, replacing `/dev/nvme0n1pX` with the actual device name or *UUID* of your swap partition:
 
    ```
    UUID=<swap_partition_UUID> none  swap  defaults  0  0
    ```
-
-   If you prefer to use the device name, the line would look like this:
-
-   ```
-   /dev/sdXY none  swap  defaults  0  0
-   ```
-
-   Save the file and exit the text editor.
-
-   Note: If you are using a UUID, you can find it by running the following command, replacing `/dev/sdXY` with your actual partition:
+   Note: If you are using a UUID, you can find it by running the following command, replacing `/dev/nvme0n1pX` with your actual partition:
 
    ```bash
-   sudo blkid /dev/sdXY
+   sudo blkid /dev/nvme0n1pX
    ```
 
 4. Enable Swapping:

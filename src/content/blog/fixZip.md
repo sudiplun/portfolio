@@ -6,7 +6,7 @@ heroImage: ""
 badge: "zip"
 ---
 
-Back to 2021, bulk of images create password protected zip using **Es file manager** on phone and back-up on telegram.later a year after tried to access but forgot what was a passsword set on zip. i was little familiar with linux bash shell and on **kali linux** used **zip2john** tool to crack but unsuccessful say something like file **corrupted** by time gap attempted sometimes,same problem 😂🤣 . Today, found tool called [fcrack](https://www.kali.org/tools/fcrackzip/) and use command
+In 2021, bulk of images were archived into zip password protected files using the "Es file manager" on the phone and backed up via Telegram. A year later, I tried to access but forgot what was a password set on the zip. I was little familiar with linux bash shell and on **kali linux** used **zip2john** tool to crack but failed, saying something like file *corrupted* by time gap attempted sometimes, same problem 😂🤣 . Today, I found a tool called [fcrack](https://www.kali.org/tools/fcrackzip/) 
 
 ```bash
 fcrackzip -v -u -D -p /usr/share/wordlists/rockyou.txt encrypted.zip
@@ -18,7 +18,7 @@ fcrackzip -v -u -D -p /usr/share/wordlists/rockyou.txt encrypted.zip
 'encrypted/IMG_20210917_214858.jpg' is corrupted, skipping zipfile no usable files found
 ```
 
-then i copy paste error on poe.com it suggest [response-link](https://poe.com/s/tVOsv7lYIOXo4UBAQ6Q6)
+Then i copy paste error on poe.com it suggest [response-link](https://poe.com/s/tVOsv7lYIOXo4UBAQ6Q6)
 
 ```
 The error message you received indicates that the file 'IMG_20210917_214858.jpg' within the ZIP file is corrupted and cannot be opened. As a result, the entire ZIP file cannot be extracted.
@@ -27,9 +27,10 @@ Alternatively, you could try using a ZIP repair tool to fix the corrupted file w
 If neither of these options work, you may need to contact the owner of the ZIP file to obtain a new, uncorrupted version of the file.
 ```
 
-then search on google `how can i fix corrupt zip file in kali linux` found this https://superuser.com/questions/23290/terminal-tool-linux-for-repair-corrupted-zip-files
+Search on google `how can i fix corrupt zip file in kali linux` found this https://superuser.com/questions/23290/terminal-tool-linux-for-repair-corrupted-zip-files
 use this command to fix zip error
 
 ```bash
 zip -FF Corrupted.zip --out New.zip
 ```
+Again use first command boom its shows password.
