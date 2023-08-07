@@ -12,7 +12,7 @@ On my laptop 256GB SSD where I already installed **Fedora** as main OS and **Win
 
 ### Installation
 
-Afterwards, proceed to install Kali using the common efi partition for three operating systems i.e 512MB,swap partition that already using by fedora and resize  30GB as root which is successfull on install everything works great on kali.
+Afterwards, proceed to install Kali using the common efi partition for three operating systems i.e 512MB,swap partition that already using by fedora and resize 30GB as root which is successfull on install everything works great on kali.
 
 ### Slow boot
 
@@ -22,7 +22,7 @@ on **fedora** face slow boot about 1 min 15 sec time to boot and check boot time
 sudo systemd-analyze plot > boot.svg
 ```
 
-Some disk related task takes time about 45s to wait then check *gnome disk* see **swap** is not mount at boot it means it has swap partition with _UUID_ looking for is not avaiable because installation of kali linux formated and change _UUID_ of *swap*  so it looking for original UUID that make *45sec* wait.
+Some disk related task takes time about 45s to wait then check _gnome disk_ see **swap** is not mount at boot it means it has swap partition with _UUID_ looking for is not avaiable because installation of kali linux formated and change _UUID_ of _swap_ so it looking for original UUID that make _45sec_ wait.
 
 #### how to mount swap partition at boot ?
 
@@ -37,11 +37,11 @@ To mount a swap partition at boot in Fedora (or any Linux distribution that uses
    lsblk
    ```
 
-Identify the partition labeled as "swap"
-2. Backup /etc/fstab (optional but recommended):
-   ```bash
-   sudo cp /etc/fstab /etc/fstab.backup
-   ```
+Identify the partition labeled as "swap" 2. Backup /etc/fstab (optional but recommended):
+
+```bash
+sudo cp /etc/fstab /etc/fstab.backup
+```
 
 3. Edit /etc/fstab:
    Now, you need to edit the `/etc/fstab` file to include your swap partition. Open the file using a text editor such as "nano" or "vim". For example:
@@ -50,11 +50,12 @@ Identify the partition labeled as "swap"
    sudo vim /etc/fstab
    ```
 
-   Add the following line to the end of the file, replacing `/dev/nvme0n1pX` with the actual device name or *UUID* of your swap partition:
+   Add the following line to the end of the file, replacing `/dev/nvme0n1pX` with the actual device name or _UUID_ of your swap partition:
 
    ```
    UUID=<swap_partition_UUID> none  swap  defaults  0  0
    ```
+
    Note: If you are using a UUID, you can find it by running the following command, replacing `/dev/nvme0n1pX` with your actual partition:
 
    ```bash
